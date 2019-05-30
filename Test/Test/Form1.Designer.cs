@@ -33,12 +33,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.labMsg = new System.Windows.Forms.Label();
             this.txtRs = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.labMsg = new System.Windows.Forms.Label();
+            this.txtrs2 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtdg
@@ -92,25 +98,6 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(429, 248);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // labMsg
-            // 
-            this.labMsg.AutoSize = true;
-            this.labMsg.Location = new System.Drawing.Point(33, 9);
-            this.labMsg.Name = "labMsg";
-            this.labMsg.Size = new System.Drawing.Size(23, 12);
-            this.labMsg.TabIndex = 3;
-            this.labMsg.Text = "Msg";
-            // 
             // txtRs
             // 
             this.txtRs.Location = new System.Drawing.Point(41, 110);
@@ -128,6 +115,73 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "结果";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.txtrs2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(768, 476);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // labMsg
+            // 
+            this.labMsg.AutoSize = true;
+            this.labMsg.Location = new System.Drawing.Point(33, 9);
+            this.labMsg.Name = "labMsg";
+            this.labMsg.Size = new System.Drawing.Size(23, 12);
+            this.labMsg.TabIndex = 3;
+            this.labMsg.Text = "Msg";
+            // 
+            // txtrs2
+            // 
+            this.txtrs2.Location = new System.Drawing.Point(43, 149);
+            this.txtrs2.Multiline = true;
+            this.txtrs2.Name = "txtrs2";
+            this.txtrs2.Size = new System.Drawing.Size(708, 275);
+            this.txtrs2.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(43, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 21);
+            this.textBox2.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(163, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "冒泡测试";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(41, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "冒泡数组";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(41, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "结果";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -140,6 +194,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +212,11 @@
         private System.Windows.Forms.Label labMsg;
         private System.Windows.Forms.TextBox txtRs;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtrs2;
+        private System.Windows.Forms.Label label4;
     }
 }
 

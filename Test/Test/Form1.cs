@@ -13,7 +13,7 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num =  Convert.ToInt32(txtdg.Text);
+            int num = Convert.ToInt32(txtdg.Text);
 
             Stopwatch sw = new Stopwatch();
             sw.Restart();
@@ -34,5 +34,27 @@ namespace Test
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int[] arr = new int[] { 3, 9, 45, 7, 20 };
+            
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr.Length - 1; j++)
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        var temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                txtrs2.Text += arr[i] + ",";
+            }
+        }
     }
 }
